@@ -9,3 +9,12 @@ arr[0] = 42
 
 print(arr)
 print(x)
+
+x = arr.view()
+#The view does not own the data
+# and any changes made to the view will affect the original array,
+# and any changes made to the original array will affect the view.
+arr[3] = 51
+
+print (arr)
+print(x)
