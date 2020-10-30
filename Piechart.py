@@ -4,5 +4,7 @@ import numpy as np
 y = np.array([35,25,25,10,15])
 mylabels = ["one","two","three","four","five"]
 
-plt.pie(y , labels=mylabels)
+myexplode = [0.2,0,0,0,0.3]
+
+plt.pie(y , labels=mylabels , startangle=90, explode=myexplode)
 plt.show()
